@@ -1,0 +1,11 @@
+<div>
+  <app-search-bar
+    [options]="searchOptions$ | async"
+    [preSelectOptions]="preselectedOptions"
+    (selectedOptions)="onSelectedOptions($event)"
+  ></app-search-bar>
+<app-chord-chart #chordChartComponent
+ [chords]="chords$ | async"
+ [preSelect]="preselectedOptions"
+></app-chord-chart>
+<router-outlet></router-outlet>
