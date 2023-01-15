@@ -1,5 +1,10 @@
-# DWeb
+# Visualization of indirect dependencies [Demo](https://dragoljubthb.github.io/ngrx-pub-sub-viz/).
 
+### By using a graph structure you'll be able to follow its dependencies for a preset depth of 4
+
+### The anonimized data was scraped from typescript code that implements effects with rxjs 
+
+# Meta
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
 ## Development server
