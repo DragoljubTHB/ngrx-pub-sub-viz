@@ -7021,9 +7021,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class ChordChartComponent {
     constructor() {
-        this.height = 600;
-        this.width = 600;
-        this.innerRadius = Math.min(this.width, this.height) * 0.5 - 60;
+        this.height = window.innerHeight;
+        this.width = window.innerWidth;
+        this.innerRadius = Math.min(this.width, this.height) * 0.5 - 100;
         this.outerRadius = this.innerRadius + 6;
         this.chord = d3__WEBPACK_IMPORTED_MODULE_1__["chordDirected"]()
             .padAngle(12 / this.innerRadius)
