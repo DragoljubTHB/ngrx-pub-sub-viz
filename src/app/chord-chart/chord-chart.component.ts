@@ -14,9 +14,9 @@ export class ChordChartComponent implements OnInit, AfterViewInit {
   private chordData: ChordData;
   private svg;
   private arcs;
-  private height = 600;
-  private width = 600;
-  private innerRadius = Math.min(this.width, this.height) * 0.5 - 60;
+  private height = window.innerHeight;
+  private width = window.innerWidth;
+  private innerRadius = Math.min(this.width, this.height) * 0.5 - 100;
   private outerRadius = this.innerRadius + 6;
   private chord = d3.chordDirected()
     .padAngle(12 / this.innerRadius)
